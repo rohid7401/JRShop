@@ -1,6 +1,9 @@
 # JRShop
 A Rohi Prendas and Jocxan Sandi Proyect
 
+Objetivo: Crear una pagina web y aplicación movil para la publicacion y venta de productos artesanales de emprendedores de instagram y otras redes sociales.
+
+
 Requerimientos Funcionales:
 
 1.Registro de usuarios: Los usuarios deben poder crear una cuenta en la plataforma, ya sea mediante el registro con su correo electrónico o con sus credenciales de Instagram.
