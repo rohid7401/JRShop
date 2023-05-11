@@ -1,41 +1,37 @@
 # JRShop
 A Rohi Prendas and Jocxan Sandi Proyect
 
-Objetivo: Crear una pagina web y aplicación movil para la publicacion y venta de productos artesanales de emprendedores de instagram y otras redes sociales.
+Objective: Create a web page and mobile application for the sale of products from entrepreneurs on Instagram and other social networks.
 
+Functional Requirements:
+1. User registration: Users should be able to create an account on the platform, either by registering with their email or using their Instagram credentials.
 
-Requerimientos Funcionales:
+2. Integration with Instagram: The platform should be able to connect with the Instagram API to retrieve information about vendors and their products.
 
-1.Registro de usuarios: Los usuarios deben poder crear una cuenta en la plataforma, ya sea mediante el registro con su correo electrónico o con sus credenciales de Instagram.
+3. Post creation: Vendors should be able to create posts of their handmade items directly from the platform, which will be displayed on Instagram.
 
-2.Integración con Instagram: La plataforma debe tener la capacidad de conectarse con la API de Instagram para obtener información de los vendedores y sus artículos.
+4. Post editing: Vendors should have the ability to edit their posts to update product information, prices, etc.
 
-3.Creación de publicaciones: Los vendedores deben poder crear publicaciones de sus artículos artesanales que se muestran en Instagram directamente desde la plataforma.
+5. Purchase of items: Users should be able to buy items directly from the platform. Payment options, such as credit/debit card or other popular payment methods, should be provided.
 
-4.Edición de publicaciones: Los vendedores deben tener la capacidad de editar sus publicaciones para actualizar la información del producto, precio, etc.
+6. Order management: Vendors should have a section on the platform to manage orders, where they can view received orders and update the order status.
 
-5.Compra de artículos: Los usuarios deben poder comprar los artículos directamente desde la plataforma. Se debe proporcionar una opción para pagar con tarjeta de crédito/débito o con otros métodos de pago populares.
+7. Real-time chat: Users should have the option to communicate with vendors in real-time to ask questions about the products.
 
-6.Gestión de pedidos: Los vendedores deben tener una sección de administración de pedidos en la plataforma, donde puedan ver los pedidos recibidos y actualizar el estado del pedido.
+8. Ratings and comments: Users should be able to rate and leave comments about the products.
 
-7.Chat en tiempo real: Los usuarios deben tener la opción de comunicarse con los vendedores en tiempo real para hacer preguntas sobre los productos.
+9. Purchase history: Users should be able to access their purchase history and view details of each order.
 
-8.Valoración y comentarios: Los usuarios deben poder valorar y dejar comentarios sobre los productos.
+Non-Functional Requirements:
+1. Security: The platform should be secure to ensure the protection of user data and payment information.
 
-9.Historial de compras: Los usuarios deben poder acceder a su historial de compras y ver los detalles de cada pedido.
+2. Scalability: The platform should be scalable to handle a large number of users and products.
 
+3. Speed: The platform should be fast and efficient to ensure a seamless user experience.
 
-Requerimientos No Funcionales:
+4. Responsive design: The platform should be designed to be responsive, meaning it should function well on different mobile devices and screen sizes.
 
-1.Seguridad: La plataforma debe ser segura para garantizar la protección de los datos de los usuarios y la información de pago.
+5. Usability: The platform should be user-friendly and easy to understand.
 
-2.Escalabilidad: La plataforma debe ser escalable para manejar un gran número de usuarios y productos.
-
-3.Velocidad: La plataforma debe ser rápida y eficiente para garantizar una experiencia de usuario sin problemas.
-
-4.Diseño responsive: La plataforma debe ser diseñada para ser responsive, lo que significa que debe funcionar en diferentes dispositivos móviles y tamaños de pantalla.
-
-5.Usabilidad: La plataforma debe ser fácil de usar y entender para los usuarios.
-
-6.Adaptabilidad: La plataforma debe ser adaptable a los cambios en las políticas de Instagram o en los requisitos de los usuarios.
+6. Adaptability: The platform should be adaptable to changes in Instagram's policies or user requirements.
 
