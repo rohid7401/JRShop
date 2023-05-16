@@ -1,0 +1,94 @@
+get_all_users()
+get_user_by_id (IN p_user_id INT)
+insert_user (
+  IN p_name VARCHAR(255),
+  IN p_email VARCHAR(255),
+  IN p_password VARCHAR(255),
+  IN p_shipping_address VARCHAR(255)
+)
+update_user (
+  IN p_user_id INT,
+  IN p_name VARCHAR(255),
+  IN p_email VARCHAR(255),
+  IN p_password VARCHAR(255),
+  IN p_shipping_address VARCHAR(255)
+)
+CREATE PROCEDURE delete_user (IN p_user_id INT)
+
+
+get_all_sellers()
+get_seller_by_id (
+  IN p_seller_id INT
+)
+insert_seller (
+  IN p_name VARCHAR(255)
+)
+update_seller (
+  IN p_seller_id INT,
+  IN p_name VARCHAR(255)
+)
+delete_seller (
+  IN p_seller_id INT
+)
+
+get_all_products()
+get_product_by_id (
+  IN p_product_id INT
+)
+insert_product (
+  IN p_name VARCHAR(255),
+  IN p_description TEXT,
+  IN p_price DECIMAL(10,2),
+  IN p_quantity INT,
+  IN p_vendor_id INT
+)
+update_product (
+  IN p_product_id INT,
+  IN p_name VARCHAR(255),
+  IN p_description TEXT,
+  IN p_price DECIMAL(10,2),
+  IN p_quantity INT,
+  IN p_vendor_id INT
+)
+delete_product (
+  IN p_product_id INT
+)
+
+
+get_all_orders()
+get_order_by_id (
+  IN p_order_id INT
+)
+insert_order (
+  IN p_customer_name VARCHAR(255),
+  IN p_customer_email VARCHAR(255),
+  IN p_customer_phone VARCHAR(255),
+  IN p_shipping_address TEXT,
+  IN p_shipping_city VARCHAR(255),
+  IN p_shipping_zipcode VARCHAR(255),
+  IN p_shipping_country VARCHAR(255),
+  IN p_total_price DECIMAL(10,2),
+  IN p_status VARCHAR(50),
+  IN p_vendor_id INT
+)
+update_order (
+  IN p_order_id INT,
+  IN p_customer_name VARCHAR(255),
+  IN p_customer_email VARCHAR(255),
+  IN p_customer_phone VARCHAR(255),
+  IN p_shipping_address TEXT,
+  IN p_shipping_city VARCHAR(255),
+  IN p_shipping_zipcode VARCHAR(255),
+  IN p_shipping_country VARCHAR(255),
+  IN p_total_price DECIMAL(10,2),
+  IN p_status VARCHAR(50),
+  IN p_vendor_id INT
+)
+update_order_status (
+  IN p_order_id INT,
+  IN p_order_status ENUM('pending', 'shipped', 'delivered')
+)
+delete_order (
+  IN p_order_id INT
+)
+
