@@ -311,7 +311,70 @@ def delete_order():
 
 #--------------------------------------------------------------
 
+# Obtener todos los elementos de orden
+@app.route('/get_all_order_items', methods=['GET'])
+def get_all_order_items():
+    result = execute_procedure('get_all_order_items')
+    order_items = []
+    for row in result:
+        order_item_data = {
+            'id': row[0],
+            'order_id': row[1],
+            'product_id': row[2],
+            'quantity': row[3],
+            'price': float(row[4])
+        }
+        order_items.append(order_item_data)
+    return jsonify(order_items)
 
+# Obtener elementos de orden por ID de orden
+@app.route('/get_order_items_by_order_id', methods=['POST'])
+def get_order_items_by_order_id():
+    order_id = request.json['id']
+    result = execute_procedure('get_order_items_by_order_id', (order_id,))
+    order_items = []
+    for row in result:
+        order_item_data = {
+            'id': row[0],
+            'order_id': row[1],
+            'product_id': row[2],
+            'quantity': row[3],
+            'price': float(row[4])
+        }
+        order_items.append(order_item_data)
+    return jsonify(order_items)
+
+# Insertar un nuevo elemento de orden
+@app.route('/insert_order_item', methods=['POST'])
+def insert_order_item():
+    data = request.get_json()
+    order_id = data['order_id']
+    product_id = data['product_id']
+    quantity = data['quantity']
+    price = data['price']
+    execute_procedure('insert_order_item', (order_id, product_id, quantity, price))
+    return jsonify({'message': 'Order item created successfully'}), 201
+
+# Actualizar un elemento de orden existente
+@app.route('/update_order_item', methods=['POST'])
+def update_order_item():
+    data = request.get_json()
+    order_item_id = data['id']
+    order_id = data['order_id']
+    product_id = data['product_id']
+    quantity = data['quantity']
+    price = data['price']
+    execute_procedure('update_order_item', (order_item_id, order_id, product_id, quantity, price))
+    return jsonify({'message': 'Order item updated successfully'})
+
+# Eliminar un elemento de orden
+@app.route('/delete_order_item', methods=['POST'])
+def delete_order_item():
+    order_item_id = request.json['id']
+    execute_procedure('delete_order_item', (order_item_id,))
+    return jsonify({'message': 'Order item deleted successfully'})
+
+#--------------------------------------------------------------
 
 if __name__ == '__main__':
     app.run()

@@ -92,3 +92,24 @@ delete_order (
   IN p_order_id INT
 )
 
+
+get_all_order_items()
+get_order_items_by_order_id (
+  IN p_order_id INT
+)
+insert_order_item (
+  IN p_order_id INT,
+  IN p_product_id INT,
+  IN p_quantity INT,
+  IN p_price DECIMAL(10,2)
+)
+update_order_item (
+  IN p_order_item_id INT,
+  IN p_order_id INT,
+  IN p_product_id INT,
+  IN p_quantity INT,
+  IN p_price DECIMAL(10,2)
+)
+delete_order_item (
+  IN p_order_item_id INT
+)
