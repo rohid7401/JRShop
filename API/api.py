@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 import pymysql
 
+
 app = Flask(__name__)
 
 # Configura la conexión a la base de datos MySQL
